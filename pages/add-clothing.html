@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Add Clothing | Closet 2000</title>
+</head>
+<body>
+	<header>
+		<h1>Add Clothing</h1>
+		<nav aria-label="Navegação principal">
+			<a href="home.html">Home</a>
+			<a href="clothes.html">Your Clothes</a>
+			<a href="add-clothing.html">Add Clothing</a>
+			<a href="dress-me.html">Dress Me</a>
+		</nav>
+	</header>
+
+	<main>
+		<form>
+			<div>
+				<label for="clothing-name">Nome da roupa</label>
+				<input id="clothing-name" name="name" type="text" required>
+			</div>
+
+			<fieldset>
+				<legend>Tipo de peça</legend>
+				<label><input name="type" type="radio" value="cima" required> Parte de cima</label>
+				<label><input name="type" type="radio" value="baixo"> Parte de baixo</label>
+			</fieldset>
+
+			<div>
+				<label for="clothing-category">Categoria</label>
+				<select id="clothing-category" name="category" required>
+					<option value="">Selecione uma categoria</option>
+					<option value="casual">Casual</option>
+					<option value="elegante">Elegante</option>
+					<option value="social">Social</option>
+				</select>
+			</div>
+
+			<div>
+				<label for="clothing-image">Imagem</label>
+				<input id="clothing-image" name="image" type="text" placeholder="assets/roupas/nome-da-imagem.png">
+			</div>
+
+			<button type="submit">Adicionar roupa</button>
+		</form>
+	</main>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dress Me | Closet 2000</title>
+	
+
+</head>
+
+<body>
+	<header>
+		<h1>Dress Me</h1>
+		<nav aria-label="Navegação principal">
+			<a href="home.html">GEEH `S WARDROBE</a>
+
+			<div class="carrossel-container" aria-roledescription="carousel" aria-label="categorias de roupas">
+				<ion-icon name="chevron-back-outline"></ion-icon>
+				<!-- Trilho onde as palavras ficam alinhadas -->
+				<div class="carrossel-trilho">
+					<!-- Palavras individuais -->
+					
+					<span class="carrossel-item" aria-hidden="false">CASUAL</span>
+					<span class="carrossel-item" aria-hidden="true">ELEGANTE</span>
+					<span class="carrossel-item" aria-hidden="true">SOCIAL</span>
+					<span class="carrossel-item" aria-hidden="true">VERÃO</span>
+					<span class="carrossel-item" aria-hidden="true">YK2</span>
+				</div>
+
+			</div>
+			<a href="add-clothing.html">Add Clothing</a>
+			<a href="dress-me.html">Dress Me</a>
+		</nav>
+	</header>
+
+	<main>
+		<section aria-labelledby="dress-me-title">
+			<h2 id="dress-me-title">Create a look</h2>
+			<label for="dress-category">Categoria</label>
+			<select id="dress-category" name="category">
+				<option value="casual">Casual</option>
+				<option value="elegante">Elegante</option>
+				<option value="social">Social</option>
+				<option value="verao">Verão</option>
+				<option value="yk2">YK2</option>
+			</select>
+			<button type="button">Dress Me</button>
+
+			<div class="look-result" aria-live="polite">
+				<div class="selected-top"></div>
+				<div class="selected-bottom"></div>
+				<p class="match-result"></p>
+			</div>
+		</section>
+	</main>
+
+	<script  type = "module"  src = " https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js " > </script> 
+	<script nomodule src = " https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js " > </script>  
+</body>
+
+</html>

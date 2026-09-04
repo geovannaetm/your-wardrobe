@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closet 2000</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        
+
+        <section aria-labelledby="intro-title">
+           
+            <video  autoplay id="intro-video" width="1920" height="1080">
+                <source src="assets/video/Novo projeto [490BD66].mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução de vídeos.
+            </video>
+           
+        </section>
+
+
+        <script>
+            // Seleciona o vídeo pelo ID
+            const video = document.getElementById('intro-video');
+
+            // Adiciona um evento que detecta quando o vídeo chegou ao fim
+            video.addEventListener('ended', function () {
+                // Substitua o link abaixo pela página para onde o usuário deve ir
+                window.location.href = "pages/home.html";
+            });
+        </script>
+
+
+
+    </main>
+</body>
+
+</html>

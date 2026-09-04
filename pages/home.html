@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home | Closet 2000</title>
+	<link rel="stylesheet" href="../css/home.css">
+
+	<!--Fontes-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&family=Silkscreen:wght@400;700&family=VT323&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<nav aria-label="Navegação principal" class="nav-bar">
+			<a href="home.html">GEEH `S WARDROBE</a>
+
+			<div class="carrossel-container" aria-roledescription="carousel" aria-label="categorias de roupas">
+				<ion-icon name="chevron-back-outline"></ion-icon>
+				<!-- Trilho onde as palavras ficam alinhadas -->
+				<div class="carrossel-trilho">
+					<!-- Palavras individuais -->
+
+					<span class="carrossel-item" aria-hidden="false">CASUAL</span>
+					<!--
+					<span class="carrossel-item" aria-hidden="true">ELEGANTE</span>
+					<span class="carrossel-item" aria-hidden="true">SOCIAL</span>
+					<span class="carrossel-item" aria-hidden="true">VERÃO</span>
+					<span class="carrossel-item" aria-hidden="true">YK2</span>
+					-->
+				</div>
+				<ion-icon name="chevron-forward-outline"></ion-icon>
+			</div>
+			<div class="add-clothing-link" id="add-clothing-link">
+				<a href="add-clothing.html">+</a>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="img-background">
+			<img src="../assets/img/background.png" alt="Imagem de fundo do closet" width="1920" height="1080">
+		</section>
+
+		<section class="wardrobe-select" aria-labelledby="wardrobe-title">
+			<section aria-labelledby="top-title" class="top-section">
+				<div id="top-section" class="top-section-div">
+					<img src="../assets/roupas/jaquetarosa.png" alt="Imagem de uma peça de roupa da parte de cima" id="top-image"
+						width="300" height="300">
+				</div>
+
+				<div class="clothing-actions" class="top-section" aria-labelledby="top-title">
+					<button type="button" id="prev-top"><ion-icon name="play-back-sharp"></ion-icon></button>
+					<button type="button" id="static-top"><ion-icon name="play-sharp"></ion-icon></button>
+					<button type="button" id="next-top"><ion-icon name="play-forward-sharp"></ion-icon></button>
+
+				</div>
+				
+			</section>
+
+			
+
+
+			<section aria-labelledby="bottom-title">
+				<section aria-labelledby="bottom-title" class="bottom-section">
+					<div id="bottom-section" class="bottom-section-div">
+
+						<img src="../assets/roupas/saiajeans.png" alt="Imagem de uma peça de roupa da parte de baixo"
+							id="bottom-image" width="300" height="300">
+
+					</div>
+
+				</section>
+			</section>
+
+
+		</section>
+
+		<!--
+		<section aria-labelledby="wardrobe-title">
+			<h2 id="wardrobe-title">My Wardrobe</h2>
+			<p>Categoria atual: <strong>Casual</strong></p>
+
+			<section aria-labelledby="top-title">
+				<h3 id="top-title">Parte de cima</h3>
+				<div class="clothing-display"></div>
+				<button type="button">Anterior</button>
+				<button type="button">Próxima</button>
+			</section>
+
+			<section aria-labelledby="bottom-title">
+				<h3 id="bottom-title">Parte de baixo</h3>
+				<div class="clothing-display"></div>
+				<button type="button">Anterior</button>
+				<button type="button">Próxima</button>
+			</section>
+
+			<p aria-live="polite">Selecione uma peça de cima e uma peça de baixo.</p>
+			-->
+		</section>
+	</main>
+
+	<script type="module" src=" https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js "> </script>
+	<script nomodule src=" https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js "> </script>
+</body>
+
+</html>
