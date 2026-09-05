@@ -112,14 +112,13 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    
 }
 
 .top-section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     width: 300px;
 }
 
@@ -127,7 +126,6 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
     width: 300px;
 }
 
@@ -158,4 +156,62 @@ main{
     font-size: 1.8rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     box-shadow: inset 3px  3px 0px rgba(211, 209, 209, 0.25);
+}
+
+
+
+
+
+
+.bottom-actions-row {
+    display: flex;
+    align-items: flex-end;
+    width: min(642px, calc(100vw - 16px));
+}
+
+.bottom-actions-row .clothing-actions {
+    flex: 1 1 auto;
+    width: auto;
+}
+
+.home-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 160px;
+    min-height: 64px;
+    padding: 10px 20px;
+    border: 3px solid #000;
+    box-shadow: inset 4px  4px 0px rgba(243, 243, 243, 0.25);
+    color: #000;
+    font-family: var(--ff-pressstart2p);
+    font-size: 0.90rem;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px rgba(224, 220, 220, 0.5);
+    text-transform: uppercase;
+    flex: 0 0 88px;
+}
+
+.home-action-browse {
+    background-color: #737373;
+}
+
+.home-action-dress {
+    background-color: #295C9A;
+    color: #050505;
+}
+
+
+
+@media (max-width: 600px) {
+    .bottom-actions-row {
+        width: calc(100vw - 16px);
+    }
+
+    .home-action {
+        flex-basis: 78px;
+        font-size: 0.6rem;
+    }
 }
