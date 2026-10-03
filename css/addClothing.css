@@ -1,0 +1,86 @@
+/*-------------------------*\
+ propriedades customizadas
+\*-------------------------*/
+
+:root{
+/*Tipografia*/
+
+--ff-dotgothic16: "DotGothic16", sans-serif;
+--ff-pressstart2p: "Press Start 2P", system-ui;
+--ff-silkscreen: "Silkscreen", sans-serif;
+--ff-vt323: "VT323", monospace;
+
+
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #AD917C
+}
+
+
+.add-clothing-nav {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: var(--ff-pressstart2p);
+}
+
+
+.add-clothing-nav > a {
+    flex-shrink: 0;
+}
+
+.add-clothing-nav h1 {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #fff;
+    padding: 10px;
+}
+
+.close-clothing-link{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.close-clothing-link a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+nav a  {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
