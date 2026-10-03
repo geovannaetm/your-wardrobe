@@ -25,34 +25,85 @@
 
 	<main>
 		<form>
-			<div>
-				<label for="clothing-name">Nome da roupa</label>
+			<div class="form-layout">
+				<div class="form-fields">
+			<div class="clothing-name">
+				<label for="clothing-name">Name:</label>
 				<input id="clothing-name" name="name" type="text" required>
 			</div>
 
-			<fieldset>
-				<legend>Tipo de peça</legend>
-				<label><input name="type" type="radio" value="cima" required> Parte de cima</label>
-				<label><input name="type" type="radio" value="baixo"> Parte de baixo</label>
+			<fieldset class="clothing-type" aria-label="Tipo de roupa">
+				<legend>Category:</legend>
+				<label class="radio-container">
+					<input name="type" type="radio" value="cima" required>
+					<span class="custom-radio" aria-hidden="true"></span>
+					<span>Top</span>
+				</label>
+				<label class="radio-container">
+					<input name="type" type="radio" value="baixo">
+					<span class="custom-radio" aria-hidden="true"></span>
+					<span>Bottom</span>
+				</label>
 			</fieldset>
 
-			<div>
-				<label for="clothing-category">Categoria</label>
-				<select id="clothing-category" name="category" required>
-					<option value="">Selecione uma categoria</option>
-					<option value="casual">Casual</option>
-					<option value="elegante">Elegante</option>
-					<option value="social">Social</option>
-				</select>
+			<div class="carrossel-Item" aria-roledescription="carousel" aria-label="Item de roupas">
+				<h4>Item of clothing:</h4>
+				<div class="carrossel-controles">
+					<ion-icon name="chevron-back-outline"></ion-icon>
+					<!-- Trilho onde as palavras ficam alinhadas -->
+					<div class="carrossel-trilho" id="clothing-Item">
+						<!-- Palavras individuais -->
+
+						<span class="carrossel-item" value="shirt" aria-hidden="false">Shirt</span>
+						<!--
+						<span class="carrossel-item" value="coat" aria-hidden="true">Coat</span>
+						<span class="carrossel-item" value="skirt" aria-hidden="true">Skirt</span>
+						<span class="carrossel-item" value="pants" aria-hidden="true">Pants</span>
+						-->
+					</div>
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</div>
 			</div>
 
-			<div>
-				<label for="clothing-image">Imagem</label>
-				<input id="clothing-image" name="image" type="text" placeholder="assets/roupas/nome-da-imagem.png">
+			<div class="carrossel-Categoria" aria-roledescription="carousel" aria-label="categorias de roupas">
+				<span>Style:</span>
+				<div class="carrossel-controles">
+					<ion-icon name="chevron-back-outline"></ion-icon>
+					<!-- Trilho onde as palavras ficam alinhadas -->
+					<div class="carrossel-trilho">
+						<!-- Palavras individuais -->
+
+						<span class="carrossel-categoria" value="casual" aria-hidden="false">CASUAL</span>
+						<!--
+						<span class="carrossel-categoria" value="elegante" aria-hidden="true">ELEGANTE</span>
+						<span class="carrossel-categoria" value="social" aria-hidden="true">SOCIAL</span>
+						<span class="carrossel-categoria" value="verão" aria-hidden="true">VERÃO</span>
+						<span class="carrossel-categoria" value="yk2" aria-hidden="true">YK2</span>
+						-->
+					</div>
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</div>
+			</div>
+				</div>
+			
+				<div class="image-upload">
+				<label for="clothing-image">IMAGE OF YOUR OUTFIT</label>
+				<input id="clothing-image" name="image" type="file" accept="image/*">
+
+				<label class="image-preview" id="image-preview" for="clothing-image" aria-live="polite">
+					<span>INSIRA A IMAGEM</span>
+				</label>
+				</div>
 			</div>
 
-			<button type="submit">Adicionar roupa</button>
+			<button class="add-action add-action-save" type="submit">SAVE</button>
 		</form>
 	</main>
+
+	<footer class="footer"></footer>
+
+	<script type="module" src=" https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js "> </script>
+	<script nomodule src=" https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js "> </script>
+	<script src="../js/add-clothing.js"></script>
 </body>
 </html>
