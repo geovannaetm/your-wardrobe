@@ -204,6 +204,49 @@ main{
 }
 
 
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    padding: 2px 0;
+    text-align: justify;
+    z-index: 2;
+    border-top: 2px solid #ffffff; 
+    
+}
+
+.footer a{
+    font-family: var(--ff-vt323);
+    font-size: 1.7rem;
+}
+
+.footer-nav{
+    margin:10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 45px;
+    letter-spacing: 0.2rem;
+    
+}
+
+.footer-wardrobe{
+    margin-left: auto;
+}
+
+.footer-wardrobe a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid #ffffff;
+    padding: 7px;
+    text-decoration: none;
+}
+
 
 @media (max-width: 600px) {
     .bottom-actions-row {
